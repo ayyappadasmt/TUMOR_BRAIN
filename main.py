@@ -8,7 +8,7 @@ import time
 #tensorflow model prediction
 
 def model_prediction(test_image):
-    model=tf.keras.models.load_model("trained_model.keras")
+    model=tf.keras.models.load_model("trained_model1.keras")
 
     image=tf.keras.preprocessing.image.load_img(test_image,target_size=(225,225))
     input_arr=tf.keras.preprocessing.image.img_to_array(image)
